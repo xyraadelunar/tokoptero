@@ -27,17 +27,18 @@
             </div>
             <div class="box-body">
                 @if ($version->isLatestPanel())
-                    You are running NookTheme <code>{{ config('app.fork-version') }}</code> based on Pterodactyl Panel version <code>{{ config('app.version') }}</code>. Your panel is up-to-date!
+                    You are running TOKOPTERO <code>{{ config('app.fork-version') }}</code> based on Pterodactyl Panel version <code>{{ config('app.version') }}</code>. Your panel is up-to-date!
                 @else
-                    Your panel is <strong>not up-to-date!</strong> The latest version is <a href="https://github.com/Nookure/NookTheme/releases/v{{ $version->getPanel() }}" target="_blank"><code>{{ $version->getPanel() }}</code></a> and you are currently running version <code>{{ config('app.version') }}</code>.
+                    Your panel is <strong>not up-to-date!</strong> The latest version is <a href="https://github.com/xyraadelunae/tokoptero/releases/v{{ $version->getPanel() }}" target="_blank"><code>{{ $version->getPanel() }}</code></a> and you are currently running version <code>{{ config('app.version') }}</code>.
                 @endif
             </div>
         </div>
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-6 col-sm-3 text-center">
-        <a href="{{ $version->getDiscord() }}"><button class="btn btn-warning" style="width:100%;"><i class="fa fa-fw fa-support"></i> Get Help <small>(via Discord)</small></button></a>
+<div class="col-xs-6 col-sm-3 text-center">
+        <a href="https://wa.me/628999045120"><button class="btn btn-success" style="width:100%;"><i class="fa fa-fw fa-money"></i> Get help via WhatsApp></a>
+    </div>
     </div>
     <div class="col-xs-6 col-sm-3 text-center">
         <a href="https://pterodactyl.io"><button class="btn btn-primary" style="width:100%;"><i class="fa fa-fw fa-link"></i> Documentation</button></a>
